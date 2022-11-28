@@ -1,0 +1,28 @@
+.Navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.Navbar li {
+    float: left;
+}
+.Navbar a {
+    display: block;
+    padding: 9px;
+    background-color: #ddd;
+    text-decoration: none;
+}
+.contacts {
+    display: flex;
+    border: 5 solid ;
+}
+.contacts__item {
+    text-align: center;
+    padding: 0 10px;
+    background-color: rgb(220, 255, 240);
+    margin: 10px;
+}
+.contact {
+    margin-left: 100px;
+}
