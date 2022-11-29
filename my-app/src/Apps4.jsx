@@ -1,6 +1,6 @@
 // React router
 import React from 'react'
-import Main from './Main'
+import Main from './main'
 
 export default function Apps4() {
   return (
