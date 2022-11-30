@@ -1,14 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import {render} from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+let nextTodoId = 0
+export const addTodo = text => ({
+    type: 'ADD_TODO',
+    id: nextTodoId++,
+    text
+})
+export const setVisibilityFilter = filter => ({
+    type: 'SET_VISIBILITY_FILTER',
+    filter
+})
+export const toogleTodo = id => ({
+    type: 'TOOGLE_TODO',
+    id
+})
+export const visibilityFilters = {
+    SHOW_ALL: 'SHOW_ALL',
+    SHOW_COMPLETED: 'SHOW_COMPLETED',
+    SHOW_ACTIVE: 'SHOW_ACTIVE'
 
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <Provider store={store}>
-   
-  </Provider>
-);
+}
